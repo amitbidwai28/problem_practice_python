@@ -9,9 +9,20 @@ def divide_numbers(x, y):
         # Handle the exception if a division by zero is attempted.
         print("The division by zero operation is not allowed.")
 
+
+def check_number(prompt):
+    while True:
+
+        try:
+            value: float = float(input(prompt))
+            return value
+        except ValueError as ve:
+            print("Error: Invalid input. Please Input a valid number.")
+
+
 # Usage
 # Define the numerator and denominator values.
-numerator = float(input("Enter the numerator :"))
-denominator = float(input("Enter the denominator: "))
+numerator = check_number("Enter the numerator: ")
+denominator = check_number("Enter the denominator: ")
 # Call the divide_numbers function with the provided numerator and denominator.
 divide_numbers(numerator, denominator)
