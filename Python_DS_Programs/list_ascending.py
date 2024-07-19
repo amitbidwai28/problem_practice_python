@@ -1,7 +1,13 @@
 # Initialize array
 
 try:
-    arr = [5, 2, 8, 7, 1]
+
+    input_no = int(input("Enter the number"))
+    arr=[]
+    for ele in range(0,input_no):
+        x=int(input())
+        arr.append(x)
+    print(arr)
     temp = 0
     arr_temp = []
 
@@ -27,6 +33,10 @@ try:
     print("Elements of array sorted in ascending order without list format: ")
     for i in arr_temp:
         print(i, end=" ")
+
+    print("\nSmallest number in the list is :", arr_temp[0])
+    highest_element = arr_temp[len(arr_temp)-1]
+    print("Greatest number in the list is: ", highest_element)
 
 except:
     print("An exception occurred")
