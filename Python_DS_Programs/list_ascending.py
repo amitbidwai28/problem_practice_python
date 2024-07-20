@@ -3,9 +3,9 @@
 try:
 
     input_no = int(input("Enter the number"))
-    arr=[]
-    for ele in range(0,input_no):
-        x=int(input())
+    arr = []
+    for ele in range(0, input_no):
+        x = int(input())
         arr.append(x)
     print(arr)
     temp = 0
@@ -35,7 +35,7 @@ try:
         print(i, end=" ")
 
     print("\nSmallest number in the list is :", arr_temp[0])
-    highest_element = arr_temp[len(arr_temp)-1]
+    highest_element = arr_temp[len(arr_temp) - 1]
     print("Greatest number in the list is: ", highest_element)
 
 except:
