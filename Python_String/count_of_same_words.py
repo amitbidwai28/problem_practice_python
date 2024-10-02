@@ -3,6 +3,7 @@ def count_words_regex(input_string, search_string):
     temp = 0
     # Use regular expression to find all words
     words = input_string.split()
+    print(words)
     for eachwords in words:
         if eachwords == x:
             temp = temp + 1

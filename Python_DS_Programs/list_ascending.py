@@ -4,6 +4,7 @@ try:
 
     input_no = int(input("Enter the number"))
     arr = []
+    descending_order = []
     for ele in range(0, input_no):
         x = int(input())
         arr.append(x)
@@ -27,6 +28,9 @@ try:
     print()
     print("Elements of array in list format: ")
     print(arr_temp)
+    for j in range(arr_temp, -1):
+        descending_order.append(j)
+    print("Descending order is: ", descending_order)
 
     # Displaying elements of the array after sorting
 
